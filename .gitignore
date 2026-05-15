@@ -8,3 +8,9 @@ node_modules
 dist
 coverage
 .prisma
+=======
+.env
+dist
+coverage
+.prisma
+
