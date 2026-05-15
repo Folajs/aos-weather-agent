@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7f5;
+  color: #222;
+}
+
+.app-container {
+  min-height: 100vh;
+}
+
+.header {
+  background: #1f6f43;
+  color: white;
+  padding: 24px;
+  text-align: center;
+}
+
+.header p {
+  margin-top: 10px;
+  opacity: 0.9;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.farmers-panel,
+.advice-panel {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.farmers-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.farmer-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.farmer-card:hover {
+  transform: translateY(-2px);
+  background: #f5fff8;
+}
+
+.loading,
+.empty-state {
+  padding: 40px;
+  text-align: center;
+  color: #666;
+}
+
+.weather-box {
+  margin-top: 20px;
+  padding: 20px;
+  background: #f8faf8;
+  border-radius: 10px;
+}
+
+.weather-grid {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.advice-list {
+  margin-top: 25px;
+}
+
+.advice-card {
+  margin-top: 15px;
+  padding: 16px;
+  border-radius: 10px;
+  color: white;
+}
+
+.advice-card.good {
+  background: #2e7d32;
+}
+
+.advice-card.info {
+  background: #1565c0;
+}
+
+.advice-card.warning {
+  background: #ef6c00;
+}
+
+.advice-card.danger {
+  background: #c62828;
+}
+
+.error-box {
+  margin: 20px;
+  background: #ffebee;
+  color: #b71c1c;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+@media (max-width: 900px) {
+
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+}
